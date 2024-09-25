@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
         Button btnCalendario = findViewById(R.id.btnCalendario);
         Button btnResumen = findViewById(R.id.btnResumen);
         Button btnRecomendaciones = findViewById(R.id.btnRecomendaciones);
+        Button btnAlertas = findViewById(R.id.btnAlertas); // Botón para la nueva interfaz de alertas
+        Button btnDiaIdeal = findViewById(R.id.btnDiaIdeal); // Botón para la nueva interfaz de día ideal
 
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +44,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RecomendacionesActivity.class));
+            }
+        });
+
+        btnAlertas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AlertasActivity.class));
+            }
+        });
+
+        btnDiaIdeal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, DiaIdealActivity.class));
             }
         });
     }

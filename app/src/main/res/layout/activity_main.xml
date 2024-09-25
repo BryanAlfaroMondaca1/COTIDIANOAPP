@@ -27,4 +27,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Recomendaciones" />
+
+    <Button
+        android:id="@+id/btnAlertas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alertas" />
+
+    <Button
+        android:id="@+id/btnDiaIdeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Día Ideal" />
 </LinearLayout>

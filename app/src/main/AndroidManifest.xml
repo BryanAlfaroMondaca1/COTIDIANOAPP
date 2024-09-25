@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cotidianoapp">
 
@@ -6,23 +7,33 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-
-        <!-- MainActivity -->
+        <activity
+            android:name=".DiaIdealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlertasActivity"
+            android:exported="false" /> <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="true"> <!-- Aquí agregamos android:exported -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".RegistrarActividadesActivity" android:exported="false"/>
-        <activity android:name=".ResumenSemanalActivity" android:exported="false"/>
-        <activity android:name=".CalendarioActivity" android:exported="false"/>
-        <activity android:name=".RecomendacionesActivity" android:exported="false"/>
-
-
+        <activity
+            android:name=".RegistrarActividadesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResumenSemanalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecomendacionesActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
